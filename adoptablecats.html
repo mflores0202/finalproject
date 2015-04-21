@@ -64,11 +64,90 @@
 								</li><br>
 								<li class="col"> 
 									<label for="type">Breed</label>
-									<div class="input-wrap">
-										<div class="text-input">
-											<input id="breed" type="text" name="breed" placeholder="Please select Type first" autocomplete="off">
+										<div class="styled-select">
+											<select id="type" name="breed_0" class="pet-types">
+
+											<option value="">All breeds</option>
+											  <option value="1">Abyssinian</option>
+											  <option value="2">American Curl</option>
+											  <option value="3">American Shorthair</option>
+											  <option value="4">American Wirehair</option>
+											  <option value="5">Angora</option>
+											  <option value="6">Applehead Siamese</option>
+											  <option value="7">Balinese</option>
+											  <option value="8">Bengal</option>
+											  <option value="9">Birman</option>
+											  <option value="10">Bobtail</option>
+											  <option value="11">Bombay</option>
+											  <option value="595">Brazilian Shorthair</option>
+											  <option value="12">British Shorthair</option>
+											  <option value="13">Burmese</option>
+											  <option value="14">Burmilla</option>
+											  <option value="15">Calico</option>
+											  <option value="16">Canadian Hairless</option>
+											  <option value="596">Chanilly/Tiffany</option>
+											  <option value="597">Chartreux</option>
+											  <option value="17">Chausie</option>
+											  <option value="19">Chinchilla</option>
+											  <option value="598">Colorpoint Shorthair</option>
+											  <option value="20">Cornish Rex</option>
+											  <option value="21">Cymric</option>
+											  <option value="22">Devon Rex</option>
+											  <option value="426">Dilute Calico</option>
+											  <option value="23">Dilute Tortoiseshell</option>
+											  <option value="24">Domestic Long Hair</option>
+											  <option value="29">Domestic Medium Hair</option>
+											  <option value="35">Domestic Short Hair</option>
+											  <option value="42">Egyptian Mau</option>
+											  <option value="735">European Burmese</option>
+											  <option value="599">European Shorthair</option>
+											  <option value="43">Exotic Shorthair</option>
+											  <option value="437">Extra-Toes Cat (Hemingway Polydactyl)</option>
+											  <option value="600">German Rex</option>
+											  <option value="44">Havana</option>
+											  <option value="45">Himalayan</option>
+											  <option value="46">Japanese Bobtail</option>
+											  <option value="438">Javanese</option>
+											  <option value="47">Korat</option>
+											  <option value="439">LaPerm</option>
+											  <option value="48">Maine Coon</option>
+											  <option value="851">Malayan</option>
+											  <option value="49">Manx</option>
+											  <option value="440">Munchkin</option>
+											  <option value="441">Nebelung</option>
+											  <option value="50">Norwegian Forest Cat</option>
+											  <option value="51">Ocicat</option>
+											  <option value="442">Oriental Long Hair</option>
+											  <option value="443">Oriental Short Hair</option>
+											  <option value="52">Oriental Tabby</option>
+											  <option value="53">Persian</option>
+											  <option value="54">Pixie-Bob</option>
+											  <option value="444">Ragamuffin</option>
+											  <option value="55">Ragdoll</option>
+											  <option value="852">Rex</option>
+											  <option value="56">Russian Blue</option>
+											  <option value="853">Savannah</option>
+											  <option value="57">Scottish Fold</option>
+											  <option value="58">Selkirk Rex</option>
+											  <option value="59">Siamese</option>
+											  <option value="446">Siberian</option>
+											  <option value="447">Singapura</option>
+											  <option value="60">Snowshoe</option>
+											  <option value="61">Somali</option>
+											  <option value="62">Sphynx (hairless cat)</option>
+											  <option value="63">Tabby</option>
+											  <option value="855">Tiffany</option>
+											  <option value="68">Tiger</option>
+											  <option value="69">Tonkinese</option>
+											  <option value="70">Torbie</option>
+											  <option value="71">Tortoiseshell</option>
+											  <option value="450">Turkish Angora</option>
+											  <option value="72">Turkish Van</option>
+											  <option value="73">Tuxedo</option>
+
+											</select>
 										</div>
-									</div>
+								</li><br>
 								</li><br>
 								<li class="col">
 									<span class="label-cbox">Age</span>
@@ -76,13 +155,13 @@
 										<div class="styled-age-gender">
 											<label class="cbox">
 												<input type="checkbox" name="age" value="baby">Baby
-											</label><br>
+											</label>
 											<label class="cbox">
 												<input type="checkbox" name="age" value="young">Young
-											</label><br>
+											</label>
 											<label class="cbox">
 												<input type="checkbox" name="age" value="adult">Adult
-											</label><br>
+											</label>
 											<label class="cbox">
 												<input type="checkbox" name="age" value="senior">Senior
 											</label>
@@ -95,7 +174,7 @@
 										<div class="styled-age-gender">
 										<label class="cbox">
 											<input type="checkbox" name="gender" value="male">Male
-										</label><br>
+										</label>
 										<label class="cbox">
 											<input type="checkbox" name="gender" value="female">Female
 										</label>
@@ -103,20 +182,491 @@
 									</div>
 								</li><br>
 								<li class="col">
-								</li>
+									<span class="label-cbox">Qualities</span>
+									<div class="styled-age-gender-wrap">
+										<div class="styled-age-gender">
+											<label class="cbox"for="rgtkNeedsFoster">
+												<input type="checkbox" name="needsFoster_0"value="Yes"> Needs a foster
+											</label>
+											<label class="cbox"for="rgtkHousetrained">
+												<input type="checkbox" name="housetrained_0" id="rgtkHousetrained" value="Yes"> House trained
+											</label>
+											<label class="cbox"for="rgtkDeclawed">
+												<input type="checkbox" name="declawed_0" id="rgtkDeclawed" value="Yes">Declawed
+											</label>
+											<label class="cbox"for="rgtkSpecialneeds">
+												<input type="checkbox" name="specialneeds_0" id="rgtkSpecialneeds" value="Yes">Special needs
+											</label>
+										</div>
+									</div>
+								</li><br><li class="col">
+									<span class="label-cbox">Good with...</span>
+									<div class="styled-age-gender-wrap">
+										<div class="styled-age-gender">
+											<label class="cbox"for="rgtkGoodWithCats">
+												<input type="checkbox" name="goodWithCats_0" id="rgtkGoodWithCats" value="Yes">Cats
+											</label>
+											<label class="cbox"for="rgtkGoodWithDogs">
+												<input type="checkbox" name="goodWithDogs_0" id="rgtkGoodWithDogs" value="Yes">Dogs
+											</label>
+											<label class="cbox"for="rgtkGoodWithKids">
+												<input type="checkbox" name="goodWithKids_0" id="rgtkGoodWithKids" value="Yes">Children
+											</label>
 							</ul>
+							<br>
+							<div id="searchbu">
+								<button>search</button>
+							</div>
 						</fieldset>
+
 				</form>
 			</div>
+			<div id="SearchResultsTable_0">
+			<table class="rgtkSearchResultsTable" id="rgtkSearchResultsTable_0" cellspacing="0">
+
+  
+    <tbody><tr><td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8339621, 0);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8339/8339621/25299937_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8339/8339621/25299937_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8339/8339621/25299937_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8339621, 0);return false;">WENDALL</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8367419, 1);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8367/8367419/25372626_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8367/8367419/25372626_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8367/8367419/25372626_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8367419, 1);return false;">FLANDERS</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8317005, 2);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8317/8317005/25440727_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8317/8317005/25440727_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8317/8317005/25440727_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8317005, 2);return false;">ARTEMIY</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+      </tr>
+
+      <tr>
+      <td colspan="3">
+      <div class="rgtkHR"></div>
+      </td>
+      </tr>
+
+      <tr>
+      
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8416409, 3);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8416/8416409/25729896_500x371.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8416/8416409/25729896_500x371.jpg', sizingMethod='scale'); width:150px; height:111px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8416/8416409/25729896_500x371.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8416409, 3);return false;">ALEJANDRO</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8417828, 4);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8417/8417828/25589690_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8417/8417828/25589690_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8417/8417828/25589690_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8417828, 4);return false;">GEORGIA</a></div>
+    <div class="rgtkSearchPetBreed">American Shorthair / Mixed (medium coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Female</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8421304, 5);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8421/8421304/25603981_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8421/8421304/25603981_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8421/8421304/25603981_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8421304, 5);return false;">MILO</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+      </tr>
+
+      <tr>
+      <td colspan="3">
+      <div class="rgtkHR"></div>
+      </td>
+      </tr>
+
+      <tr>
+      
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8424496, 6);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8424/8424496/25617990_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8424/8424496/25617990_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8424/8424496/25617990_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8424496, 6);return false;">AMHERST</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Female</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8427597, 7);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8427/8427597/25729903_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8427/8427597/25729903_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8427/8427597/25729903_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8427597, 7);return false;">MISOO</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Young Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8427951, 8);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8427/8427951/25632174_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8427/8427951/25632174_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8427/8427951/25632174_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8427951, 8);return false;">ADELINE</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Female</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+      </tr>
+
+      <tr>
+      <td colspan="3">
+      <div class="rgtkHR"></div>
+      </td>
+      </tr>
+
+      <tr>
+      
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8431905, 9);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8431/8431905/25647740_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8431/8431905/25647740_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8431/8431905/25647740_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8431905, 9);return false;">LUCKY</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Female</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8431906, 10);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8431/8431906/25729908_500x374.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8431/8431906/25729908_500x374.jpg', sizingMethod='scale'); width:150px; height:112px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8431/8431906/25729908_500x374.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8431906, 10);return false;">NEWSAM</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (medium coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Female</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8431908, 11);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8431/8431908/25647743_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8431/8431908/25647743_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8431/8431908/25647743_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8431908, 11);return false;">CASH</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Senior Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+      </tr>
+
+      <tr>
+      <td colspan="3">
+      <div class="rgtkHR"></div>
+      </td>
+      </tr>
+
+      <tr>
+      
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8383691, 12);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8383/8383691/25734406_500x373.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8383/8383691/25734406_500x373.jpg', sizingMethod='scale'); width:150px; height:112px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8383/8383691/25734406_500x373.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8383691, 12);return false;">BOOM BOOM</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Senior Female</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8390816, 13);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8390/8390816/25497427_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8390/8390816/25497427_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8390/8390816/25497427_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8390816, 13);return false;">APPLE</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8393389, 14);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8393/8393389/25482864_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8393/8393389/25482864_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8393/8393389/25482864_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8393389, 14);return false;">JUJIFRUIT</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (medium coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+      </tr>
+
+      <tr>
+      <td colspan="3">
+      <div class="rgtkHR"></div>
+      </td>
+      </tr>
+
+      <tr>
+      
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8437127, 15);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8437/8437127/25671236_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8437/8437127/25671236_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8437/8437127/25671236_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8437127, 15);return false;">MINNIE</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Female</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8437128, 16);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8437/8437128/25671237_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8437/8437128/25671237_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8437/8437128/25671237_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8437128, 16);return false;">LUIGI JR</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8438802, 17);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8438/8438802/25674863_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8438/8438802/25674863_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8438/8438802/25674863_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8438802, 17);return false;">MAXIE</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Female</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+      </tr>
+
+      <tr>
+      <td colspan="3">
+      <div class="rgtkHR"></div>
+      </td>
+      </tr>
+
+      <tr>
+      
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8442535, 18);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8442/8442535/25729931_500x374.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8442/8442535/25729931_500x374.jpg', sizingMethod='scale'); width:150px; height:112px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8442/8442535/25729931_500x374.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8442535, 18);return false;">KAISA</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Adult Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8442536, 19);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8442/8442536/25729932_500x373.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8442/8442536/25729932_500x373.jpg', sizingMethod='scale'); width:150px; height:112px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8442/8442536/25729932_500x373.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8442536, 19);return false;">AVERY</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Young Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8442540, 20);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8442/8442540/25687990_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8442/8442540/25687990_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8442/8442540/25687990_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8442540, 20);return false;">ADELINA</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Young Female</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+      </tr>
+
+      <tr>
+      <td colspan="3">
+      <div class="rgtkHR"></div>
+      </td>
+      </tr>
+
+      <tr>
+      
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8442542, 21);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8442/8442542/25687992_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8442/8442542/25687992_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8442/8442542/25687992_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8442542, 21);return false;">SHMI</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Medium Hair / Mixed (medium coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Young Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8447726, 22);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8447/8447726/25712498_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8447/8447726/25712498_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8447/8447726/25712498_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8447726, 22);return false;">PAPRIKA</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Short Hair / Mixed (short coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Young Female</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+    <td class="rgtkSearchResultsCell">
+
+    <div class="rgtkSearchPetPicture">
+    <a href="" onclick="toolkitFocusPet_0(0, 8448029, 23);return false;">
+        <div class="rgtkSearchPetPic" style="background-image:url(https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8448/8448029/25713029_500x375.jpg);-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8448/8448029/25713029_500x375.jpg', sizingMethod='scale'); width:150px; height:113px;"></div>
+    	<img class="rgtkSearchPetPicImg" src="https://s3.amazonaws.com/filestore.rescuegroups.org/2084/pictures/animals/8448/8448029/25713029_500x375.jpg" style="display:none;">
+        </a>
+    </div>
+
+    <div class="rgtkSearchPetName"><a href="" onclick="toolkitFocusPet_0(0, 8448029, 23);return false;">BUTTY</a></div>
+    <div class="rgtkSearchPetBreed">Domestic Medium Hair / Mixed (medium coat)</div>
+    <div class="rgtkSearchPetBasicInfo">Senior Male</div>    <div class="rgtkSearchPetLocationDistance">1 mile away    
+    </div></td>
+
+    
+  </tr>
+  </tbody></table>
+</div>
 			<!--end search-->
 			<div class="postnavigation">
 			<div id="pages">
 				<ul>
 					<li class="pginfo">Page</li>
 					<li class="active_page"><a href="#">1</a></li>
-					<li><a href="aboutus.html">2</a></li>
-					<li><a href="adoptme.html">3</a></li>
-					<li><a href="#contactus.html">></a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">></a></li>
 				</ul>
 			</div>
 		</div>
