@@ -1,10 +1,139 @@
 <!DOCTYPE html> 
 	<head>
-		<Title> </title>
+		<Title>Corgi Beach Day Is A Thing That Happened</title>
 			<meta charset="utf-8">
 			<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	<body>
-		
+			<div id="topbar">	
+			</div>
+		<div class="wrapper">
+			<div id="header">
+				<div class="logo">
+				<a href="#">
+					<img src="http://placehold.it/360x70" width="360" height="70" alt="Find Your Next Pet Here" border="0"></a>
+				</div>
+				<div class="socialmedia">
+				<img src="http://sallysbakingaddiction.com/wp-content/themes/sallysbakingaddiction/images/connect.png" width="55" height="50" alt="connect" border="0">
+				<a href="/feed/" title="RSS" target="_blank">
+					<img src="http://sallysbakingaddiction.com/images/rss.png" width="45" height="45" alt="RSS" border="0"></a>
+				<a href="https://twitter.com/dogs" title="Twitter" target="_blank">
+					<img src="http://sallysbakingaddiction.com/images/twitter.png" width="45" height="45" alt="Twitter" border="0"></a>
+				<a href="http://www.facebook.com/dogs" title="Facebook" target="_blank">
+					<img src="http://sallysbakingaddiction.com/images/facebook.png" width="45" height="45" alt="Facebook" border="0"></a>
+				<a href="http://pinterest.com/dogs" title="Pinterest" target="_blank">
+					<img src="http://sallysbakingaddiction.com/images/pinterest.png" width="45" height="45" alt="Pinterest" border="0"></a>
+				<a href="http://instagram.com/dogs" title="Instagram" target="_blank">
+					<img src="http://sallysbakingaddiction.com/images/instagram.png" width="45" height="45" alt="Instagram" border="0"></a>
+				</div>
+			</div>
+			<!--end #header-->
+			<div id="navbar">
+			<ul>
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li><a href="aboutus.html" target="_blank">About Us</a></li>
+				<li><a href="adoptme.html" target="_blank">Adopt</a></li>
+				<li><a href="contactus.html" target="_blank">Contact Us</a></li>
+			</ul>
+			</div>
+			<!--end #navbar-->
+			<div id="search">
+				<form class="findme" action="#/pet-search" method="get" autocomplete="off">
+						<fieldset id="searchoptions">
+							<ul class="ul">
+								<li class="col">
+									<label for="location">Location</label>
+									<div class="input-wrap">
+										<div class="text-input">
+											<input type="text" id="location" class="loc-input" name="location" placeholder="Ex: 10027, or Lower East Side, NY, NY" required="required" title="Location is required.">
+										</div>
+									</div>
+									<div id="requiredPopup">Please fill out this field.</div>
+								</li><br>
+								<li class="col"> 
+									<label for="type">Type</label>
+									<div class="input-wrap">
+										<div class="styled-select">
+											<select id="type" name="animal" class="pet-types">
+												<option value class="any">Any</option>
+												<option value="dog" class="pet-dog">Dog</option>
+												<option value="cat" class="pet cat">Cat</option>
+											</select>
+										</div>
+									</div>
+								</li><br>
+								<li class="col"> 
+									<label for="type">Breed</label>
+									<div class="input-wrap">
+										<div class="text-input">
+											<input id="breed" type="text" name="breed" placeholder="Please select Type first" autocomplete="off">
+										</div>
+									</div>
+								</li><br>
+								<li class="col">
+									<span class="label-cbox">Age</span>
+									<div class="styled-age-gender-wrap">
+										<div class="styled-age-gender">
+											<label class="cbox">
+												<input type="checkbox" name="age" value="baby">Baby
+											</label><br>
+											<label class="cbox">
+												<input type="checkbox" name="age" value="young">Young
+											</label><br>
+											<label class="cbox">
+												<input type="checkbox" name="age" value="adult">Adult
+											</label><br>
+											<label class="cbox">
+												<input type="checkbox" name="age" value="senior">Senior
+											</label>
+										</div>
+									</div>
+								</li><br>
+								<li class="col">
+									<span class="label-cbox">Gender</span>
+									<div class="styled-age-gender-wrap">
+										<div class="styled-age-gender">
+										<label class="cbox">
+											<input type="checkbox" name="gender" value="male">Male
+										</label><br>
+										<label class="cbox">
+											<input type="checkbox" name="gender" value="female">Female
+										</label>
+										</div>
+									</div>
+								</li><br>
+								<li class="col">
+								</li>
+							</ul>
+						</fieldset>
+				</form>
+			</div>
+			<!--end search-->
+			<div class="postnavigation">
+			<div id="pages">
+				<ul>
+					<li class="pginfo">Page</li>
+					<li class="active_page"><a href="#">1</a></li>
+					<li><a href="aboutus.html">2</a></li>
+					<li><a href="adoptme.html">3</a></li>
+					<li><a href="#contactus.html">></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--end wrapper-->
+		<div id ="footer">
+				<div id="sign">
+					<p class="email">Sign up to receive alerts about adoptable pets in your area!!</p>
+				</div>
+				<div id="signup">
+					<form method="post" action="action.php" target="_blank">
+						<input class="emailupdates" type="text"name="enter email address" placeholder="enter email address">
+							<button>submit</button>
+					</form>
+				</div>
+		</div>
+		<div class="copyright">
+			copyright 2015 Melissa Flores. 
+		</div>
 	</body>
 </html>

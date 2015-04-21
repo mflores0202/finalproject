@@ -1,10 +1,118 @@
 <!DOCTYPE html> 
 	<head>
-		<Title> </title>
+		<Title>Corgi Beach Day Is A Thing That Happened</title>
 			<meta charset="utf-8">
 			<link rel="stylesheet" type="text/css" href="styles.css">
+			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    		<script>
+				function initialize() {
+  					var mapOptions = {
+    					zoom: 12,
+    					center: new google.maps.LatLng (40.7590615,-73.969231)
+  						}
+  					var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  					setMarkers (map, rescues);
+  					}
+  					
+  					var rescues = [
+  					['Mighty Mutts', 40.8052344,-73.9536162, 1],
+  					['ASPCA', 40.7826039, -73.9506774, 2],
+  					['Anjellicle Cats', 40.7957535,-73.9672081, 3]
+  					];
+  				function setMarkers(map, locations) {
+  					var image = {
+  						size: new google.maps.Size(20, 32),
+  						origin: new google.maps.Point (0,0),
+  						anchor: new google.maps.Point (0, 32)
+  					};
+  					var shape = {
+  						coords: [1, 1, 1, 20, 18, 20, 18, 1],
+  						type:'poly'
+  					};
+  					for (var i=0; i <locations.length; i++) {
+  						var rescues = locations[i];
+  						var myLatLng = new google.maps.LatLng(rescues[1], rescues[2]);
+  						var marker = new google.maps.Marker({
+  							position:myLatLng,
+  							map: map,
+  							icon: image,
+  							shape:shape,
+  							title: rescues[0],
+  							zIndex: rescues[3]
+  						});
+  					}
+  				}
+  		
+				google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
 	</head>
 	<body>
-		
+			<div id="topbar">	
+			</div>
+		<div class="wrapper">
+			<div id="header">
+				<div class="logo">
+				<a href="#">
+					<img src="http://placehold.it/360x70" width="360" height="70" alt="Find Your Next Pet Here" border="0"></a>
+				</div>
+				<div class="socialmedia">
+				<img src="http://sallysbakingaddiction.com/wp-content/themes/sallysbakingaddiction/images/connect.png" width="55" height="50" alt="connect" border="0">
+				<a href="/feed/" title="RSS" target="_blank">
+					<img src="http://sallysbakingaddiction.com/images/rss.png" width="45" height="45" alt="RSS" border="0"></a>
+				<a href="https://twitter.com/dogs" title="Twitter" target="_blank">
+					<img src="http://sallysbakingaddiction.com/images/twitter.png" width="45" height="45" alt="Twitter" border="0"></a>
+				<a href="http://www.facebook.com/dogs" title="Facebook" target="_blank">
+					<img src="http://sallysbakingaddiction.com/images/facebook.png" width="45" height="45" alt="Facebook" border="0"></a>
+				<a href="http://pinterest.com/dogs" title="Pinterest" target="_blank">
+					<img src="http://sallysbakingaddiction.com/images/pinterest.png" width="45" height="45" alt="Pinterest" border="0"></a>
+				<a href="http://instagram.com/dogs" title="Instagram" target="_blank">
+					<img src="http://sallysbakingaddiction.com/images/instagram.png" width="45" height="45" alt="Instagram" border="0"></a>
+				</div>
+			</div>
+			<!--end #header-->
+			<div id="navbar">
+			<ul>
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li><a href="aboutus.html" target="_blank">About Us</a></li>
+				<li><a href="adoptme.html" target="_blank">Adopt</a></li>
+				<li><a href="contactus.html" target="_blank">Contact Us</a></li>
+			</ul>
+			</div>
+			<!--end #navbar-->
+			<div id="cont">
+				<div id="map-canvas">
+				</div>
+				<div id="where">
+					<h1>Adoptions in the City:</h1>
+					<h4>Mighty Mights & Ollie's Place</h4>
+						<p><b>Where:</b> Southwest corner of Union Square Park (14th Street and Union Square West) and in the Petco - Union Square (860 Broadway, New York, NY 10003)
+						<br><b>When:</b> Every Saturday (weather permitting) from 11:30am until 5:00pm
+						<br><b>Email:</b>  info@mightymutts.org </p>
+					<h4>ASPCA</h4>
+						<p><b>Where:</b> 424 E 92nd St, New York, NY, 10128 (between 1st Avenue and York)<br>
+						<b>When:</b> Monday - Saturday: 11:00am - 7:00pm, Sunday: 11:00am - 5:00pm<br>
+						<b>Phone:</b> 212.876.7700</p>
+					<h4>Anjellicle Cats</h4>
+						<p><b>Where:</b> Every Saturday at Petco on 86th Street and Lexington Avenue, Every Sunday at Petco on Columbus Avenue and 100th Street<br>
+						<b>When:</b>1:00pm - 6:00pm<br>
+						<b>Email:</b> info@anjelliclecats.com</p>
+				</div>
+			</div>
+
+			<!--end main pic-->
+		<!--end wrapper-->
+		<div id ="footer">
+					<h3 class="email">Sign up to receive alerts about adoptable pets in your area!</h3>
+					<div>
+						<form method="post" action="action.php"target="_blank">
+							<input class="emailupdates" type="text"name="enter email address" placeholder="enter email address">
+							<button>submit</button>
+						</form>
+					</div>
+		</div>
+		<div class="copyright">
+			copyright 2015 Melissa Flores. 
+		</div>
 	</body>
 </html>
